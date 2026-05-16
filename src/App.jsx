@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import TikTokVerify from './components/TikTokVerify';
+import TikTokVerify from './components/TiktokVerify';
 import ThemeToggle from './components/ThemeToggle'
 import './index.css'
 import Particlebackground from './components/Particlebackground'
