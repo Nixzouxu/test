@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import TikTokVerify from './components/TikTokVerify';
 import ThemeToggle from './components/ThemeToggle'
 import './index.css'
 import Particlebackground from './components/Particlebackground'
@@ -14,9 +15,16 @@ import Easteregg          from './components/Easteregg'
 import Rpgabout from './components/Rpgabout'             
 import MusicPlayer from './components/MusicPlayer'
 
+
 function App() {
-  const [introDone, setIntroDone] = useState(false)
+  const [introDone, setIntroDone] = useState(false);
+  const [verified, setVerified] = useState(false);
+
   if (!introDone) return <Terminalintro onDone={() => setIntroDone(true)} />
+
+  if (!verified) {
+    return <TikTokVerify onVerify={() => setVerified(true)} />;
+  }
 
   return (
     <div className="min-h-screen bg-[#050A0E] text-white">
